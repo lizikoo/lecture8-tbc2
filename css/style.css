@@ -1,0 +1,84 @@
+.background{
+	display: inline-block;
+	background-image:url(https://img.freepik.com/free-vector/pink-flowers-nature-scene-with-sky_1308-45520.jpg?w=2000&fbclid=IwAR0DSPO3b3UCoaL58mxRUKocTTeh_wgvTyqXR9vsFpfDMKnf6SQLsNu64rk) ;
+	width: 1560px;
+	height:1000px ;
+	object-fit: cover;
+	position: relative;
+} 
+
+.background1{
+	position: relative;
+	display: inline-block;
+}
+.sun{
+	position: absolute;
+	display: inline-block;
+	width: 300px;
+	height: 230px;
+	top: -60px;
+	right: 2px;
+	transition-property:all ;
+	transition-duration:2s ;
+	transition-timing-function:ease ;
+	transition-delay:2s ;
+	transition: width 2s;
+}
+
+.sun:hover{
+  width: 310px;
+  height: 260px;
+  animation: rotation 2s infinite linear;
+}
+/*@keyframes sun{
+	from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+*/
+
+
+
+
+
+
+
+.fairy1{
+	display: inline-block;
+
+	width:210px ;
+	height:360px ;
+	position: absolute;
+	top: 230px;
+	right: 330px;
+	object-fit: cover;
+	animation: fairy1 2.5s infinite;
+
+}
+
+@keyframes fairy1 {
+	60% { top:180px }
+	65%{ top:190px }
+	70%{ top:200px }
+	75%{ top:210px }
+	80%{ top:220px }
+	90%{ top:230px }
+}
+
+.fairy2{
+    display: inline-block;
+	width:300px ;
+	height:360px;
+	position: absolute;
+	top:280px;
+	left: 2px;
+	animation: fairy2 15s infinite;
+}
+
+@keyframes fairy2{
+	from{ left:20px }
+	to{ left:1530px }
+}
